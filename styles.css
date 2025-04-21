@@ -1,0 +1,122 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.card, .project {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover, .project:hover {
+  transform: scale(1.02);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  background-color: #e6f0ff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.skills li:hover {
+  background-color: #d0e2ff;
+}
+
+footer {
+  background: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem 0;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skills li {
+  background-color: #f0f0f0;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.skills li:hover {
+    background-color: #e0e0e0;
+  }
